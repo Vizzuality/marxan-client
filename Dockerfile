@@ -13,6 +13,8 @@ COPY . .
 
 RUN yarn build
 
+ENV CI true
+
 EXPOSE 3000
 
 ENTRYPOINT ["sh", "./entrypoint.sh"]
